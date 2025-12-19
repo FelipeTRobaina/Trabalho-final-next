@@ -3,7 +3,7 @@
 ## Descrição Geral
 Este projeto consiste na migração de uma Landing Page pessoal desenvolvida originalmente em React (SPA - Vite) para o framework **Next.js**. 
 
-O objetivo principal foi explorar as capacidades de renderização do Next.js para otimizar a performance, melhorar o SEO e implementar estratégias de busca de dados mais eficientes. Além da migração, foi adicionada uma nova funcionalidade de **Previsão do Tempo** que consome uma API externa, garantindo o bônus de complexidade técnica.
+O objetivo principal foi explorar as capacidades de renderização do Next.js para otimizar a performance, melhorar o SEO e implementar estratégias de busca de dados mais eficientes. Além da migração, foi adicionada uma nova funcionalidade de **Previsão do Tempo** que consome uma API externa.
 
 ---
 
