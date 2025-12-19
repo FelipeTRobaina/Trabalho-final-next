@@ -57,5 +57,5 @@ Abaixo, a comparação das métricas obtidas via Google Lighthouse (Mobile/Deskt
 * **Rota Dinâmica/API:** Implementação de chamada à API externa de Clima com tratamento de dados JSON.
 
 
-* ** Link Projeto antigo: https://migrando-meu-projeto.vercel.app/
-* ** Link Projeto novo: https://trabalhofinalnext.vercel.app/
+* Link Projeto antigo: https://migrando-meu-projeto.vercel.app/
+* Link Projeto novo: https://trabalhofinalnext.vercel.app/
