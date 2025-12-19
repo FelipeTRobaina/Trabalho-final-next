@@ -28,10 +28,10 @@ Abaixo, a comparação das métricas obtidas via Google Lighthouse (Mobile/Deskt
 
 | Métrica Mobile | Projeto Antigo | Projeto Novo (Landing Page/Weather page) | Conclusão |
 
-* |-------**Performance** | 78  |  97 | Melhorou |
-* |----**Acessibilidade** | 100 | 100 | Mantido  |
-* |-**Melhores Práticas** | 100 | 100 | Mantido  |
-* |---------------**SEO** | 91  | 100 | Melhorou |
+* |      **Performance** | 78  |  97 | Melhorou |
+* |   **Acessibilidade** | 100 | 100 | Mantido  |
+* |**Melhores Práticas** | 100 | 100 | Mantido  |
+* |              **SEO** | 91  | 100 | Melhorou |
 
 | Métrica Desktop | Projeto Antigo (React SPA) | Projeto Novo (Next.js) | Conclusão |
 
