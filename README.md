@@ -1,4 +1,6 @@
-# Migração de Frontend: React para Next.js
+https://github.com/FelipeTRobaina/Trabalho-final-next.git
+
+# Migração do React para Next.js
 
 ## Descrição Geral
 Este projeto consiste na migração de uma Landing Page pessoal desenvolvida originalmente em React (SPA - Vite) para o framework **Next.js**. 
@@ -57,5 +59,5 @@ Ao utilizar a API externa da Open-Meteo, a aplicação demonstra como o frontend
 * **Rota Dinâmica/API:** Implementação de chamada à API externa de Clima com tratamento de dados JSON.
 
 
-* Link Projeto antigo: https://migrando-meu-projeto.vercel.app/
-* Link Projeto novo: https://trabalhofinalnext.vercel.app/
+* Link do Vercel Projeto antigo: https://migrando-meu-projeto.vercel.app/
+* Link do Vercel Projeto novo: https://trabalhofinalnext.vercel.app/
