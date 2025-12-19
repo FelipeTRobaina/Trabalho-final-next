@@ -46,6 +46,12 @@ Abaixo, a comparação das métricas obtidas via Google Lighthouse (Mobile/Deskt
  **SEO:** A nota máxima (100) foi atingida graças à renderização no servidor. O Next.js entrega o conteúdo semântico completo para os indexadores (Google/Bing), ao contrário do React SPA que entregava apenas um container vazio, dificultando a leitura por robôs de busca.
 
 ---
+### Reflexão em relação ao frontend desacoplado
 
-## 🌟 Funcionalidades Extras (Bônus)
+    Este projeto exemplifica a arquitetura de Frontend Desacoplado, onde a camada de apresentação (Next.js) opera de forma totalmente independente da lógica de negócios e armazenamento de dados.
+    Ao utilizar a API externa da Open-Meteo, a aplicação demonstra como o frontend pode consumir dados de forma livre, sem depender de um backend acoplado ao código. Isso permite que a interface evolua livremente, focada apenas em performance e experiência do usuário, enquanto os dados são gerenciados por serviços especializados externos.
+
+---
+
+## Funcionalidades Extras (Bônus)
 * **Rota Dinâmica/API:** Implementação de chamada à API externa de Clima com tratamento de dados JSON.
