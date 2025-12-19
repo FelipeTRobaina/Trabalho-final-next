@@ -28,17 +28,17 @@ Abaixo, a comparação das métricas obtidas via Google Lighthouse (Mobile/Deskt
 
 | Métrica Mobile | Projeto Antigo | Projeto Novo (Landing Page/Weather page) | Conclusão |
 
-|       **Performance** | 78  |  97 | Melhorou |
-|    **Acessibilidade** | 100 | 100 | Mantido  |
-| **Melhores Práticas** | 100 | 100 | Mantido  |
-|               **SEO** | 91  | 100 | Melhorou |
+* |       **Performance** | 78  |  97 | Melhorou |
+* |    **Acessibilidade** | 100 | 100 | Mantido  |
+* | **Melhores Práticas** | 100 | 100 | Mantido  |
+* |               **SEO** | 91  | 100 | Melhorou |
 
 | Métrica Desktop | Projeto Antigo (React SPA) | Projeto Novo (Next.js) | Conclusão |
 
-|       **Performance** | 88  |  99 | Melhorou |
-|    **Acessibilidade** | 100 | 100 | Mantido  |
-| **Melhores Práticas** | 100 | 100 | Mantido  |
-|               **SEO** | 91  | 100 | Melhorou |
+* |       **Performance** | 88  |  99 | Melhorou |
+* |    **Acessibilidade** | 100 | 100 | Mantido  |
+* | **Melhores Práticas** | 100 | 100 | Mantido  |
+* |               **SEO** | 91  | 100 | Melhorou |
 
 ### Análise Técnica dos Resultados
 
@@ -55,3 +55,7 @@ Abaixo, a comparação das métricas obtidas via Google Lighthouse (Mobile/Deskt
 
 ## Funcionalidades Extras (Bônus)
 * **Rota Dinâmica/API:** Implementação de chamada à API externa de Clima com tratamento de dados JSON.
+
+
+* ** Link Projeto antigo: https://migrando-meu-projeto.vercel.app/
+* ** Link Projeto novo: https://trabalhofinalnext.vercel.app/
