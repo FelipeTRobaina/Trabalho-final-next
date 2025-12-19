@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Migração de Frontend: React para Next.js
 
-## Getting Started
+## Descrição Geral
+Este projeto consiste na migração de uma Landing Page pessoal desenvolvida originalmente em React (SPA - Vite) para o framework **Next.js**. 
 
-First, run the development server:
+O objetivo principal foi explorar as capacidades de renderização do Next.js para otimizar a performance, melhorar o SEO e implementar estratégias de busca de dados mais eficientes. Além da migração, foi adicionada uma nova funcionalidade de **Previsão do Tempo** que consome uma API externa, garantindo o bônus de complexidade técnica.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura e Estratégias de Renderização
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+O projeto utiliza duas estratégias distintas de renderização, escolhidas de acordo com a necessidade de cada página:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Página Inicial - SSG (Static Site Generation)
+* **Estratégia:** A Home é gerada estaticamente no momento do build (Server-Side).
+* **Justificativa:** Como o conteúdo raramente muda, o SSG é a escolha ideal. Ele entrega o HTML pronto instantaneamente para o navegador.
 
-## Learn More
+### 2. Página de Clima - ISR (Incremental Static Regeneration)
+* **Estratégia:** A página é estática, mas configurada para revalidar a cada 15 minutos (`revalidate: 900`).
+* **Consumo de API:** Dados consumidos da **Open-Meteo API** (Focada em Rio Grande - RS).
+* **Justificativa:** Dados meteorológicos mudam com frequência, mas não exigem atualização em tempo real a cada milissegundo (SSR puro). O ISR permite que a página seja entregue, sem a constante atualização.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Análise Lighthouse: Antes vs. Depois
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Abaixo, a comparação das métricas obtidas via Google Lighthouse (Mobile/Desktop).
 
-## Deploy on Vercel
+| Métrica Mobile | Projeto Antigo | Projeto Novo (Landing Page/Weather page) | Conclusão |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+|       **Performance** | 78  |  97 | Melhorou |
+|    **Acessibilidade** | 100 | 100 | Mantido  |
+| **Melhores Práticas** | 100 | 100 | Mantido  |
+|               **SEO** | 91  | 100 | Melhorou |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Métrica Desktop | Projeto Antigo (React SPA) | Projeto Novo (Next.js) | Conclusão |
+
+|       **Performance** | 88  |  99 | Melhorou |
+|    **Acessibilidade** | 100 | 100 | Mantido  |
+| **Melhores Práticas** | 100 | 100 | Mantido  |
+|               **SEO** | 91  | 100 | Melhorou |
+
+### Análise Técnica dos Resultados
+
+ **Performance:** A mudança de **78 para 97** no mobile demonstra o poder do SSG e do componente `<Image />` do Next.js.
+ **SEO:** A nota máxima (100) foi atingida graças à renderização no servidor. O Next.js entrega o conteúdo semântico completo para os indexadores (Google/Bing), ao contrário do React SPA que entregava apenas um container vazio, dificultando a leitura por robôs de busca.
+
+---
+
+## 🌟 Funcionalidades Extras (Bônus)
+* **Rota Dinâmica/API:** Implementação de chamada à API externa de Clima com tratamento de dados JSON.

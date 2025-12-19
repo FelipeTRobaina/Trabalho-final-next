@@ -48,7 +48,6 @@ export default async function ClimaPage() {
         <p className={styles.obs}>
           Dados coletados em: <strong>{dataVerificacao}</strong>
           <br />
-          *Próxima atualização em 15 minutos.
         </p>
 
         <Link href="/" className={styles.botaoVoltar}>
