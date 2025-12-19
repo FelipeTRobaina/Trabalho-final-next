@@ -48,8 +48,8 @@ Abaixo, a comparação das métricas obtidas via Google Lighthouse (Mobile/Deskt
 ---
 ### Reflexão em relação ao frontend desacoplado
 
-    Este projeto exemplifica a arquitetura de Frontend Desacoplado, onde a camada de apresentação (Next.js) opera de forma totalmente independente da lógica de negócios e armazenamento de dados.
-    Ao utilizar a API externa da Open-Meteo, a aplicação demonstra como o frontend pode consumir dados de forma livre, sem depender de um backend acoplado ao código. Isso permite que a interface evolua livremente, focada apenas em performance e experiência do usuário, enquanto os dados são gerenciados por serviços especializados externos.
+Este projeto exemplifica a arquitetura de Frontend Desacoplado, onde a camada de apresentação (Next.js) opera de forma totalmente independente da lógica de negócios e armazenamento de dados.
+Ao utilizar a API externa da Open-Meteo, a aplicação demonstra como o frontend pode consumir dados de forma livre, sem depender de um backend acoplado ao código. Isso permite que a interface evolua livremente, focada apenas em performance e experiência do usuário, enquanto os dados são gerenciados por serviços especializados externos.
 
 ---
 
